@@ -1,0 +1,58 @@
+Boa base de consulta: https://guialinux.uniriotec.br/
+
+cal: exibe um calendário;
+cat arquivo: mostra o conteúdo de um arquivo. Por exemplo, para ver o arquivo infowester.txt, basta digitar cat infowester.txt;
+ - o comando more também pode ser usado para essa finalidade: more nomeArquivo
+cd diretório: abre um diretório. Por exemplo, para abrir a pasta /conteudo, basta digitar cd /conteudo. Para ir ao diretório raiz a partir de qualquer outro, digite apenas cd;
+chmod: comando para alterar as permissões de arquivos e diretórios.
+clear: elimina todo o conteúdo visível, deixando a linha de comando no topo, como se o terminal acabasse de ter sido acessado;
+cp origem destino: copia um arquivo ou diretório para outro local. Por exemplo, para copiar o arquivo infowester.txt com o nome infowester2.txt para /home, basta digitar cp infowester.txt /home/infowester2.txt;
+ - cp -av . ../novoDiretorio : Copia todo o conteudo do diretório atual para o diretório novo.
+date: mostra a data e a hora atual;
+df: mostra as partições usadas;
+diff arquivo1 arquivo2: indica as diferenças entre dois arquivos, por exemplo: diff calc.c calc2.c;
+du diretório: mostra o tamanho de um diretório;
+file arquivo: mostra informações de um arquivo;
+find diretório parâmetro termo: o comando find serve para localizar informações. Para isso, deve-se digitar o comando seguido do diretório da pesquisa mais um parâmetro (ver lista abaixo) e o termo da busca. Parâmetros:
+
+ - name - busca por nome
+ - type - busca por tipo
+ - size - busca pelo tamanho do arquivo
+ - mtime - busca por data de modificação
+
+ - Exemplo: find /home name tristania
+
+grep: Este comando procura padrões em um arquivo.
+ - grep ‘teste de ‘ projeto.txt : Procura no arquivo projeto.txt pelo texto 'teste de '.
+ - grep -i 'TESTE'projeto.txt : Procura ignorando o case sensitive.
+history: mostra os últimos comandos inseridos;
+ - history -c apaga o histórico dos comandos até aquele momento.
+kill: encerra processados em andamento.
+ls: lista os arquivos e diretórios da pasta atual;
+ - ls -R : mostra todos os arquivos do diretório, inclusive os ocultos
+mv origem destino: tem a mesma função do comando cp, só que ao invés de copiar, move o arquivo ou o diretório para o destino especificado;
+mkdir diretório: cria um diretório, por exemplo, mkdir infowester cria uma pasta de nome infowester;
+passwd: altera sua senha. Para um administrador mudar a senha de um usuário, basta digitar passwd seguido do nome deste;
+ps: mostra os processos em execução.
+pwd: mostra o diretório em que você está;
+rm arquivo: apaga o arquivo especificado;
+ - rm -fr nomeDiretorio : apaga o diretório e todo seu conteudo sem restrição
+rmdir diretório: apaga o diretório especificado, desde que vazio;
+top: exibe a lista dos processos, conforme os recursos de memória consumidos;
+touch nomeArquivo: Se o arquivo não existir será criado
+uname: mostra informações do sistema operacional e do computador. Digite uname -a para obter mais detalhes;
+useradd usuário: cria uma nova conta usuário, por exemplo, useradd marvin cria o usuário marvin;
+userdel usuário: apaga a conta do usuário especificado;
+uptime: mostra a quantas horas seu computador está ligado;
+whereis nome: procura pelo binário do arquivo indicado, útil para conhecer seu diretório ou se ele existe no sistema;
+w: mostra os usuários logados atualmente no computador (útil para servidores);
+wc: Mostra quantidade de palavras/linhas/caracteres do arquivo;
+ - wc filmes.txt : mostra todas as informações no formato nr de linhas qtd de palavras qtd de caracteres.
+ - wc -l filmes.txt : mostra a qtd de linhas do arquivo.
+ - wc -c filmes.txt : mostra a qtd de caracteres do arquivo.
+ - wc -w filmes.txt : mostra a qtd de palavras do arquivo.
+who: mostra quem está usando o sistema.
+
+Praticamente todos os comandos citados possuem parâmetros que permitem incrementar suas funcionalidades.
+Para verificar quais são esses paremetros e como utiliza-los você pode usar o comando man seguido do comando
+que deseja ver, exemplo: man ls ou man cp
