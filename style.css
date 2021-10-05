@@ -76,6 +76,55 @@ li {
     margin: auto;
     line-height: 24px;
 }
+.student-testimonial {
+    padding: 30px 70px 90px 70px;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.student-content {
+    width: 30%;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.student-content p {
+    margin: 10px 0;
+}
+
+.learning{
+    padding: 30px 70px;
+    background-color: lightgray;
+    min-height: 350px;
+}
+
+.learning li {
+    margin-bottom: 30px;
+    list-style-type: square;
+}
+
+.learning-left{
+    float: left;
+    max-width: 35%;
+}
+
+.learning-right{
+    float: right;
+    margin-right: 60px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+}
+
+footer a {
+    display: block;
+    width: 290px;
+    margin: 25px auto;
+
+}
 
 .picture {
   border-radius: 50%;
