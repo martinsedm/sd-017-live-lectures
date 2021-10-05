@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.texto-destaque {
+  font-family: fantasy;
+}
+
+p,
+li {
+  color: #475550;
+  font-size: 16px;
+}
+
+.trybe-green {
+  color: #11a36a;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.main-title {
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: darkgreen;
+  margin-bottom: 30px;
+}
+
+.testimonial-name {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.button {
+  padding: 15px 30px;
+  background-color: #11a36a;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.header {
+  background-image: url('images/smiling-image.jpg');
+  background-size: cover;
+  background-position: 50% 25%;
+  padding: 60px 30px 40px;
+}
+
+.header-content {
+    max-width: 650px;
+}
+
+.header-content p {
+    max-width: 80%;
+    margin-bottom: 30px;
+}
+
+.picture {
+  border-radius: 50%;
+}

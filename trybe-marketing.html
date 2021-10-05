@@ -10,73 +10,30 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Trybe Marketing</title>
-    <style>
-      body {
-        font-family: Montserrat, sans-serif;
-      }
-
-      .texto-destaque {
-        font-family: fantasy;
-      }
-
-      p,
-      li {
-        color: #475550;
-        font-size: 16px;
-      }
-
-      
-
-      .trybe-green {
-        color: #11a36a;
-      }
-      
-      .section-title {
-        font-size: 28px;
-        font-weight: 600;
-        line-height: 36px;
-      }
-
-      #main-title {
-        font-size: 45px;
-        line-height: 55px;
-        font-weight: 600;
-        letter-spacing: -1px;
-        color: darkgreen;
-      }
-
-      .testimonial-name{
-        font-size:  14px;
-        line-height: 20px;
-        font-weight: 600;
-      }
-
-      .button {
-        padding: 15px 30px;
-        background-color:#11a36a;
-        text-decoration: none;
-        color: white;
-        border-radius: 5px;
-      }
-      
-    </style>
   </head>
-
   <body>
-    <h1 id="main-title" >Sua carreira de sucesso em tecnologia começa aqui. Agora.</h1>
-    <img src="images/smiling-image.jpg" alt="Aluno feliz por estar na Trybe" width="400px" />
-    <p>
-      Com atividades presenciais e online, mentorias individuais e desafios práticos, a Trybe é a
-      escola do futuro e para o futuro que acelera sua carreira em desenvolvimento de software em
-      até 12 meses. <br />E o melhor?
-      <b
-        >Você não paga nada até conseguir um trabalho com uma remuneração de, no mínimo, R$ 3.000,00
-        por mês.</b
-      >
-    </p><br>
-    <a class="button" href="#" target="_blank">Inscreva-se no processo seletivo</a>
-    <h3 class="trybe-green section-title">A Trybe é para todos, inclusive para <strong>VOCÊ</strong></h3>
+    <div class="header">
+      <div class="header-content">
+        <h1 class="main-title">Sua carreira de sucesso em tecnologia começa aqui. Agora.</h1>
+        <p>
+          Com atividades presenciais e online, mentorias individuais e desafios práticos, a Trybe é a
+          escola do futuro e para o futuro que acelera sua carreira em desenvolvimento de software em
+          até 12 meses.
+          </p>
+          <p>
+          E o melhor?
+          <strong>Você não paga nada até conseguir um trabalho com uma remuneração de, no mínimo, R$
+            3.000,00 por mês.</strong>
+        </p>
+        <br />
+        <a class="button" href="#" target="_blank">Inscreva-se no processo seletivo</a>
+      </div>
+    </div>
+    <h3 class="trybe-green section-title">
+      A Trybe é para todos, inclusive para <strong>VOCÊ</strong>
+    </h3>
     <p>
       Para você que <strong>já é estudante de computação</strong>, para você que
       <strong>se interessa pelo assunto</strong> e até mesmo para
@@ -87,7 +44,7 @@
       <br />
       <strong>E QUE TENHA MUITA VONTADE E DEDICAÇÃO</strong>
     </p>
-    <img src="images/conrado-medeiros.png" alt="Conrado Medeiros" width="100px" />
+    <img class="picture" src="images/conrado-medeiros.png" alt="Conrado Medeiros" width="100px" />
     <p>
       <em>
         "Eu trabalho com Marketing e não tinha nenhuma formação ou experiência na área e consegui
@@ -100,7 +57,12 @@
       ‍Aluno da Turma de Setembro - BH
     </h4>
 
-    <img src="images/gabriel-dos-santos.png" alt="Gabriel dos Santos" width="100px" />
+    <img
+      class="picture"
+      src="images/gabriel-dos-santos.png"
+      alt="Gabriel dos Santos"
+      width="100px"
+    />
     <p>
       <em>
         "Eu não sabia nada de programação! Estudei os conteúdos gratuitos disponibilizados, consegui
@@ -112,7 +74,7 @@
       ‍Aluno da Turma de Setembro - BH
     </h4>
 
-    <img src="images/anderson-bolivar.png" alt="Anderson Bolivar" width="100px" />
+    <img class="picture" src="images/anderson-bolivar.png" alt="Anderson Bolivar" width="100px" />
     <p>
       <em>
         "Sou estudante de Engenharia Química e entrei na Trybe sem nenhuma experiência na área e
@@ -126,6 +88,7 @@
 
     <h3 class="trybe-green section-title">Quem somos e por que estamos aqui?</h3>
     <img
+      class="picture"
       src="https://uploads-ssl.webflow.com/5d4c18a28620ae5d4f33af94/5d82bafbe8178d5be56113af_Matheus%20Goyas.jpeg"
       alt="Matheus Goyas"
       width="100px"
@@ -141,6 +104,7 @@
       CEO e Co-fundador da Trybe
     </h4>
     <img
+      class="picture"
       src="https://uploads-ssl.webflow.com/5d4c18a28620ae5d4f33af94/5d82bb0b28a6013c896ebf4b_Joao%20Daniel.jpeg"
       alt="João Daniel"
       width="100px"
