@@ -25,6 +25,7 @@ li {
   font-size: 28px;
   font-weight: 600;
   line-height: 36px;
+  margin-bottom: 30px;
 }
 
 .main-title {
@@ -64,6 +65,16 @@ li {
 .header-content p {
     max-width: 80%;
     margin-bottom: 30px;
+}
+.market {
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.market p {
+    max-width: 60%;
+    margin: auto;
+    line-height: 24px;
 }
 
 .picture {
