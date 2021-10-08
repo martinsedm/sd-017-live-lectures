@@ -3,7 +3,7 @@ let num2 = 10;
 let num3 = 15;
 let age = 18;
 
-if (age == 18) {
+if (age >= 18) {
   console.log("você pode dirigir");
 } else {
   console.log("desculpa, você não pode dirigir")
