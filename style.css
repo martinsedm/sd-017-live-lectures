@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(245 248 250);
+}
+
+.header {
+  background-color:rgb(36 41 46);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.header h2 {
+  font-size: 16px;
+}
+
+.main {
+  margin: 15px;
+}
+
+.main h1 {
+  text-align: center;
+}
+
+.main-content {
+  list-style: none;
+}
+
+.main-content li {
+  padding-top: 10px;
+}
+
+.done {
+  text-decoration: line-through;
+}
