@@ -3,8 +3,33 @@ let pessoa = {
   idade: 0,
 };
 
-function criaElemento(objeto) {}
+const sessaoPrincipal = document.getElementById('principal');
+const btnAdiciona = document.querySelector('.btnAdicionar');
 
-function adicionaPessoa() {}
+btnAdiciona.addEventListener('click', adicionaPessoa);
 
-window.onload = function () {};
+function criaElemento(objeto) {
+  const novoElemento = document.createElement('p');
+  novoElemento.innerText = objeto.nome + ' - ' + objeto.idade;
+
+  sessaoPrincipal.appendChild(novoElemento);
+}
+
+function adicionaPessoa() {
+  pessoa.nome = document.getElementById('nome').value;
+  pessoa.idade = document.getElementById('idade').value;
+
+  localStorage.setItem(pessoa.nome, JSON.stringify(pessoa));
+
+  criaElemento(pessoa);
+}
+
+window.onload = function () {
+  if (localStorage.length > 0) {
+    for (let i = 0; i < localStorage.length; i += 1) {
+      let key = localStorage.key(i);
+      let objeto = JSON.parse(localStorage.getItem(key));
+      criaElemento(objeto);
+    }
+  }
+};
