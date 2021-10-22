@@ -10,7 +10,8 @@ btnAdiciona.addEventListener('click', adicionaPessoa);
 
 function criaElemento(objeto) {
   const novoElemento = document.createElement('p');
-  novoElemento.innerText = objeto.nome + ' - ' + objeto.idade;
+  // Nome: Atanes - idade: 51
+  novoElemento.innerText = 'Nome: ' + objeto.nome + ' - idade: ' + objeto.idade;
 
   sessaoPrincipal.appendChild(novoElemento);
 }
@@ -21,14 +22,17 @@ function adicionaPessoa() {
 
   localStorage.setItem(pessoa.nome, JSON.stringify(pessoa));
 
+  document.getElementById('nome').value = '';
+  document.getElementById('idade').value = '';
+
   criaElemento(pessoa);
 }
 
-window.onload = function () {
+window.onload = function() {
   if (localStorage.length > 0) {
-    for (let i = 0; i < localStorage.length; i += 1) {
+    for (let i = 0; i < localStorage.length; i++) {
       let key = localStorage.key(i);
-      let objeto = JSON.parse(localStorage.getItem(key));
+      let objeto = JSON.parse(localStorage[key]);
       criaElemento(objeto);
     }
   }
